@@ -1,0 +1,27 @@
+Source: libdoxygen-filter-perl
+Section: perl
+Priority: optional
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Francesco Paolo Lovergine <frankie@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl
+ , libpod-pom-perl
+ , libtest-output-perl
+ , libtest-simple-perl
+ , liblog-log4perl-perl
+Standards-Version: 4.1.2
+Homepage: http://github.com/jordan2175/doxygen-filter-perl
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libdoxygen-filter-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libdoxygen-filter-perl.git
+
+Package: libdoxygen-filter-perl
+Architecture: all
+Depends: libpod-pom-perl
+ , liblog-log4perl-perl
+ , libpod-pom-perl
+ , ${misc:Depends}
+ , ${perl:Depends}
+Description: Methods for pre-filtering Perl code for Doxygen
+ This is a Perl code pre-filter for Doxygen, to be used to generate
+ source Doxygen documentation, starting from Perl code and its plain 
+ POD documentation.
